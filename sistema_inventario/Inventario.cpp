@@ -15,9 +15,9 @@ void Inventario:: mostrarInventario()const
         }
     for(const Producto& p : listaProductos)
     {
-       std:: cout<<"ID: " <<  p.getId();
-       std:: cout<<"nOMBRE:" << p.getNombre();
-       std:: cout<<"sTOCK: " << p.getStock();
+       std:: cout<<"ID: " <<  p.getId() << 
+        "nOMBRE:" << p.getNombre() <<
+        "sTOCK: " << p.getStock() << std:: endl;
     }
 
 }
