@@ -21,3 +21,17 @@ void Inventario:: mostrarInventario()const
     }
 
 }
+
+Producto* Inventario :: buscarProductoPorId(int idBuscado)
+{
+    for(size_t i = 0; i < listaProductos.size();i++)
+    {
+        if(listaProductos[i].getId() ==idBuscado)
+        {
+            return &listaProductos[i];
+        }
+    }
+
+    return nullptr;
+
+}
