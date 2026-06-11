@@ -24,6 +24,8 @@ else
     stock = 0.0;
 }
 
+}
+
 void Producto:: setPrecio(double nuevo_precio)
 {
     if(nuevo_precio >0)
@@ -33,7 +35,7 @@ void Producto:: setPrecio(double nuevo_precio)
     }
     else
     {
-        cout<<"Intente de nuevo. Precio negativo ";
+        std:: cout<<"Intente de nuevo. Precio negativo ";
     }
 
 }
@@ -46,10 +48,24 @@ void Producto:: modificarStock(int cantidad)
     }
     else
     {
-        cout<<"Cantidad negativa o cero..."<<endl;
+        std:: cout<<"Cantidad negativa o cero...";
     }
 }
 
+int Producto::getId() const { 
+    return id; 
+}
+
+std::string Producto::getNombre() const { 
+    return nombre; 
+}
+
+double Producto::getPrecio() const { 
+    return precio; 
+}
+
+int Producto::getStock() const { 
+    return stock; 
 }
 
 
